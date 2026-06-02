@@ -1,0 +1,36 @@
+# --- Secrets (NEVER commit these) ---
+config/client_secrets.json
+config/youtube_token.json
+.env
+
+# --- Generated output ---
+output/videos/*.mp4
+output/audio/*.mp3
+output/audio/*.json
+output/scripts/*.json
+output/thumbnails/*.png
+logs/*.log
+data/*.db
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/
+
+# --- Misc ---
+*.bak
+*TEMP_MPY_*.mp4
+
+# Keep the branded thumbnail base and intro in assets (committed intentionally)
+!assets/thumbnail_base.png
+!assets/intro.mp4

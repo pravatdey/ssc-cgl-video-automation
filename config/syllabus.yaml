@@ -1,0 +1,1035 @@
+# ============================================================
+# SSC CGL COMPLETE PREPARATION SYLLABUS
+# 4 Subjects | 320 video lessons | Hindi narration
+#
+# SLOT SYSTEM:
+#   slot: "morning"  -> released at 5:00 AM IST (heavy thinking subjects)
+#                       Reasoning + Quantitative Aptitude
+#   slot: "evening"  -> released at 5:00 PM IST (memory/language subjects)
+#                       English + General Awareness
+#
+# The scheduler walks two independent sequences:
+#   morning_next  : next morning-slot part to publish
+#   evening_next  : next evening-slot part to publish
+#
+# Part numbering:
+#   1   - 90   General Intelligence & Reasoning   (morning)
+#   91  - 180  Quantitative Aptitude              (morning)
+#   181 - 250  English Comprehension              (evening)
+#   251 - 320  General Awareness (GK/GS)          (evening)
+# ============================================================
+syllabus:
+  name: "SSC CGL Complete Preparation"
+  total_parts: 320
+
+  sections:
+    # ============================================================
+    # SUBJECT 1: GENERAL INTELLIGENCE & REASONING  (Parts 1-90, MORNING)
+    # ============================================================
+    - name: "Reasoning - Series"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 1
+          title: "Number Series - Basics & Patterns"
+          subtopics: ["Ascending/Descending", "Arithmetic Progression", "Common difference"]
+          difficulty: "beginner"
+          formulas: ["a_n = a_1 + (n-1)d", "S_n = n/2 (2a + (n-1)d)"]
+          duration_target_minutes: 12
+        - part: 2
+          title: "Number Series - Geometric & Mixed Patterns"
+          subtopics: ["Geometric Progression", "Mixed series", "Alternating patterns"]
+          difficulty: "beginner"
+          formulas: ["a_n = a_1 * r^(n-1)"]
+          duration_target_minutes: 12
+        - part: 3
+          title: "Number Series - Square, Cube & Special Sequences"
+          subtopics: ["Perfect squares", "Perfect cubes", "Fibonacci", "Wrong number detection"]
+          difficulty: "intermediate"
+          formulas: ["n^2 series", "n^3 series", "F(n)=F(n-1)+F(n-2)"]
+          duration_target_minutes: 12
+        - part: 4
+          title: "Letter & Alpha-Numeric Series"
+          subtopics: ["Alphabet position", "Forward/backward skip", "Combined letter-number patterns"]
+          difficulty: "beginner"
+          formulas: ["A=1...Z=26", "Reverse position: 27-n"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Coding-Decoding"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 5
+          title: "Coding-Decoding - Letter & Number Coding"
+          subtopics: ["Simple shift codes", "Position-based coding", "Letter to number"]
+          difficulty: "beginner"
+          formulas: ["Shift = Coded - Original position"]
+          duration_target_minutes: 12
+        - part: 6
+          title: "Coding-Decoding - Symbol, Word & Sentence Coding"
+          subtopics: ["Symbol substitution", "Word-level coding", "Comparison method"]
+          difficulty: "intermediate"
+          formulas: ["Comparison matrix method"]
+          duration_target_minutes: 12
+        - part: 7
+          title: "Coding-Decoding - Advanced & New Pattern"
+          subtopics: ["Conditional coding", "Matrix-based coding", "Chinese coding"]
+          difficulty: "advanced"
+          formulas: ["Rule identification technique"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Analogy & Classification"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 8
+          title: "Analogy - Number & Letter Analogy"
+          subtopics: ["Square/cube relationships", "Position-based letter pairs", "Operation-based"]
+          difficulty: "beginner"
+          formulas: ["Opposite letter pairs: A-Z, B-Y"]
+          duration_target_minutes: 12
+        - part: 9
+          title: "Analogy - Word & Mixed Analogy"
+          subtopics: ["Synonym/Antonym pairs", "Cause-Effect", "Part-Whole relationships"]
+          difficulty: "intermediate"
+          formulas: ["Relationship identification framework"]
+          duration_target_minutes: 12
+        - part: 10
+          title: "Classification (Odd One Out) - Number, Letter & Word"
+          subtopics: ["Prime vs composite", "Semantic categories", "Multi-criteria"]
+          difficulty: "beginner"
+          formulas: ["Number properties", "Divisibility rules"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Blood Relations"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 11
+          title: "Blood Relations - Basic Relationships"
+          subtopics: ["Parent-child", "Sibling relations", "Family tree basics"]
+          difficulty: "beginner"
+          formulas: ["Relationship mapping chart"]
+          duration_target_minutes: 12
+        - part: 12
+          title: "Blood Relations - Coded & Complex Problems"
+          subtopics: ["Multi-generation problems", "Symbol-based relations", "Mixed gender puzzles"]
+          difficulty: "advanced"
+          formulas: ["Generation counting method", "Symbol decoding"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Direction Sense"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 13
+          title: "Direction Sense - Basic Concepts & Distance"
+          subtopics: ["Cardinal directions", "Left/Right turns", "Distance calculation"]
+          difficulty: "beginner"
+          formulas: ["Net displacement = sqrt(x^2 + y^2)", "Pythagoras theorem"]
+          duration_target_minutes: 12
+        - part: 14
+          title: "Direction Sense - Complex & Shadow Problems"
+          subtopics: ["Multiple turns", "Shadow direction by time", "Relative positions"]
+          difficulty: "intermediate"
+          formulas: ["Shadow rules: morning=West, evening=East"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Ranking & Order"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 15
+          title: "Ranking & Order - Linear & Comparison"
+          subtopics: ["Position from left/right", "Height/weight ranking", "Insufficient data"]
+          difficulty: "beginner"
+          formulas: ["Total = Left + Right - 1", "Between = |P1 - P2| - 1"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Seating Arrangement"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 16
+          title: "Linear Arrangement - Single & Two Row"
+          subtopics: ["Facing same direction", "Two parallel rows", "Neighbor conditions"]
+          difficulty: "intermediate"
+          formulas: ["Constraint-based elimination", "Mirror position mapping"]
+          duration_target_minutes: 12
+        - part: 17
+          title: "Circular Arrangement - Facing In/Out"
+          subtopics: ["Clockwise/anticlockwise", "Facing center/outside", "Adjacent positions"]
+          difficulty: "intermediate"
+          formulas: ["(n-1)! circular arrangements", "Circular left-right rules"]
+          duration_target_minutes: 12
+        - part: 18
+          title: "Seating Arrangement - Square & Rectangular Table"
+          subtopics: ["4/6/8 person tables", "Corner vs side positions", "Facing determination"]
+          difficulty: "advanced"
+          formulas: ["Rectangular position mapping"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Syllogism"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 19
+          title: "Syllogism - Venn Diagram Method & Two Statements"
+          subtopics: ["All, Some, No statements", "Drawing Venn diagrams", "Valid conclusions"]
+          difficulty: "beginner"
+          formulas: ["All A are B -> A subset of B", "Some A are B -> A intersect B not empty"]
+          duration_target_minutes: 12
+        - part: 20
+          title: "Syllogism - Either-Or, Possibility & Three Statements"
+          subtopics: ["Either-or conclusions", "Possibility cases", "Chain conclusions"]
+          difficulty: "advanced"
+          formulas: ["Complementary pairs", "Chain rule: All A=B, All B=C -> All A=C"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Statement Based"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 21
+          title: "Statement & Assumptions"
+          subtopics: ["Implicit vs explicit", "Common assumption types", "Identification framework"]
+          difficulty: "intermediate"
+          formulas: ["Assumption identification framework"]
+          duration_target_minutes: 12
+        - part: 22
+          title: "Statement & Conclusions / Course of Action"
+          subtopics: ["Logical deduction", "Over-generalization trap", "Practicality test"]
+          difficulty: "intermediate"
+          formulas: ["Conclusion validity test"]
+          duration_target_minutes: 12
+        - part: 23
+          title: "Statement & Arguments (Strong vs Weak)"
+          subtopics: ["Strong argument criteria", "Weak argument identification", "Relevance test"]
+          difficulty: "intermediate"
+          formulas: ["Argument strength evaluation"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Mathematical Operations & Inequalities"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 24
+          title: "Mathematical Operations - Symbol Substitution"
+          subtopics: ["BODMAS with swapped symbols", "Priority rules", "Equation solving"]
+          difficulty: "beginner"
+          formulas: ["BODMAS rule", "Symbol swap technique"]
+          duration_target_minutes: 12
+        - part: 25
+          title: "Inequalities - Direct, Coded & Either-Or"
+          subtopics: ["Greater/Less than chains", "Coded symbols", "Conclusion derivation"]
+          difficulty: "intermediate"
+          formulas: ["Transitive property: A>B, B>C -> A>C"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Puzzles"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 26
+          title: "Puzzles - Floor Based"
+          subtopics: ["Person-floor mapping", "Above/below conditions", "Double variable"]
+          difficulty: "advanced"
+          formulas: ["Matrix-based solving"]
+          duration_target_minutes: 12
+        - part: 27
+          title: "Puzzles - Scheduling (Days, Months, Dates)"
+          subtopics: ["Day assignment", "Order constraints", "Gap conditions"]
+          difficulty: "intermediate"
+          formulas: ["Day numbering: Mon=1, Sun=7"]
+          duration_target_minutes: 12
+        - part: 28
+          title: "Puzzles - Box, Distribution & Comparison"
+          subtopics: ["Box stacking", "Item distribution", "Multi-attribute"]
+          difficulty: "advanced"
+          formulas: ["Multi-variable matrix"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Venn Diagrams & Data Sufficiency"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 29
+          title: "Logical Venn Diagrams (Two & Three Sets)"
+          subtopics: ["Subset relationships", "Three-circle diagrams", "Region identification"]
+          difficulty: "intermediate"
+          formulas: ["n(AuBuC) = n(A)+n(B)+n(C)-n(AnB)-n(BnC)-n(AnC)+n(AnBnC)"]
+          duration_target_minutes: 12
+        - part: 30
+          title: "Data Sufficiency - Basics & Advanced"
+          subtopics: ["Statement analysis", "Alone vs together", "Sufficiency testing"]
+          difficulty: "intermediate"
+          formulas: ["5 standard answer choices"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Non-Verbal"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 31
+          title: "Mirror & Water Image"
+          subtopics: ["Letter mirror images", "Number images", "Clock mirror images", "Water image"]
+          difficulty: "beginner"
+          formulas: ["Left-right reversal", "Up-down flip", "Mirror time = 11:60 - actual"]
+          duration_target_minutes: 12
+        - part: 32
+          title: "Paper Cutting, Folding & Completion of Figure"
+          subtopics: ["Fold patterns", "Cut symmetry", "Unfolded result prediction"]
+          difficulty: "intermediate"
+          formulas: ["Holes = 2^n * cuts (n = number of folds)"]
+          duration_target_minutes: 12
+        - part: 33
+          title: "Dice & Cube"
+          subtopics: ["Standard dice rules", "Opposite faces", "Cube cutting & painting"]
+          difficulty: "intermediate"
+          formulas: ["Opposite faces sum = 7", "Total pieces = n^3", "2-face = 12(n-2)"]
+          duration_target_minutes: 12
+        - part: 34
+          title: "Counting Figures (Triangles, Squares, Rectangles)"
+          subtopics: ["Triangle counting", "Square counting", "Line segment counting"]
+          difficulty: "intermediate"
+          formulas: ["Rectangles = C(m+1,2) * C(n+1,2)", "Squares in n*n grid = sum of k^2"]
+          duration_target_minutes: 12
+        - part: 35
+          title: "Embedded & Hidden Figures, Figure Series"
+          subtopics: ["Finding hidden shapes", "Rotation patterns", "Shading patterns"]
+          difficulty: "intermediate"
+          formulas: ["Common rotation angles: 45, 90, 180"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Clock & Calendar"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 36
+          title: "Clock - Angle & Faulty Clock Problems"
+          subtopics: ["Hour-minute hand angle", "Meeting/overlap times", "Gaining/losing time"]
+          difficulty: "intermediate"
+          formulas: ["Angle = |30H - 5.5M|", "Hands meet every 65.45 min"]
+          duration_target_minutes: 12
+        - part: 37
+          title: "Calendar - Odd Days & Day Finding"
+          subtopics: ["Odd days concept", "Leap year rules", "Day of any date"]
+          difficulty: "intermediate"
+          formulas: ["Odd days: ordinary year=1, leap year=2", "400 years = 0 odd days"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Miscellaneous & Critical Reasoning"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 38
+          title: "Cause & Effect / Assertion & Reason"
+          subtopics: ["Identifying cause", "Independent events", "Reason explains assertion"]
+          difficulty: "intermediate"
+          formulas: ["Temporal and logical relationship test"]
+          duration_target_minutes: 12
+        - part: 39
+          title: "Logical Sequence of Words & Word Formation"
+          subtopics: ["Process ordering", "Hierarchy arrangement", "Dictionary order"]
+          difficulty: "beginner"
+          formulas: ["Sequential logic identification"]
+          duration_target_minutes: 12
+        - part: 40
+          title: "Input-Output & Machine Reasoning"
+          subtopics: ["Word/number arrangement", "Step-by-step tracing", "Operation identification"]
+          difficulty: "advanced"
+          formulas: ["Step tracking method"]
+          duration_target_minutes: 12
+
+    - name: "Reasoning - Practice & Revision"
+      category: "reasoning"
+      slot: "morning"
+      topics:
+        - part: 41
+          title: "Reasoning Practice Set 1 - Series & Coding"
+          subtopics: ["Mixed problems", "Time-bound practice", "Common traps"]
+          difficulty: "intermediate"
+          formulas: ["Quick solving techniques"]
+          duration_target_minutes: 12
+        - part: 42
+          title: "Reasoning Practice Set 2 - Blood Relations, Direction & Puzzles"
+          subtopics: ["Mixed problems", "Shortcut methods", "Speed techniques"]
+          difficulty: "intermediate"
+          formulas: ["Error avoidance tips"]
+          duration_target_minutes: 12
+        - part: 43
+          title: "Reasoning Practice Set 3 - Syllogism, Arrangement & Non-Verbal"
+          subtopics: ["Mixed problems", "Priority solving", "Exam pattern questions"]
+          difficulty: "advanced"
+          formulas: ["Puzzle solving framework"]
+          duration_target_minutes: 12
+        - part: 44
+          title: "Reasoning - SSC CGL Previous Year Questions"
+          subtopics: ["CGL Tier-1 patterns", "Frequently asked types", "Difficulty analysis"]
+          difficulty: "intermediate"
+          formulas: ["SSC CGL reasoning strategy"]
+          duration_target_minutes: 12
+        - part: 45
+          title: "Reasoning - Complete Revision & Formula Sheet"
+          subtopics: ["All topics quick recap", "Master formula sheet", "Final tips"]
+          difficulty: "intermediate"
+          formulas: ["Master formula sheet"]
+          duration_target_minutes: 12
+
+    # ============================================================
+    # SUBJECT 2: QUANTITATIVE APTITUDE  (Parts 91-180, MORNING)
+    # ============================================================
+    - name: "Quant - Number System"
+      category: "quant"
+      slot: "morning"
+      topics:
+        - part: 91
+          title: "Number System - Types, Divisibility & Factors"
+          subtopics: ["Natural/Whole/Integers", "Divisibility rules 2-11", "Factors & multiples"]
+          difficulty: "beginner"
+          formulas: ["Divisibility rules", "Number of factors = (a+1)(b+1)(c+1)"]
+          duration_target_minutes: 12
+        - part: 92
+          title: "Number System - HCF & LCM"
+          subtopics: ["HCF methods", "LCM methods", "HCF-LCM relationship", "Applications"]
+          difficulty: "beginner"
+          formulas: ["HCF * LCM = Product of two numbers", "Prime factorization"]
+          duration_target_minutes: 12
+        - part: 93
+          title: "Number System - Unit Digit, Remainders & Surds"
+          subtopics: ["Cyclicity of unit digit", "Remainder theorem", "Surds & indices"]
+          difficulty: "intermediate"
+          formulas: ["Cyclicity table", "a^m * a^n = a^(m+n)"]
+          duration_target_minutes: 12
+
+    - name: "Quant - Simplification & Basics"
+      category: "quant"
+      slot: "morning"
+      topics:
+        - part: 94
+          title: "Simplification & BODMAS"
+          subtopics: ["BODMAS rule", "Fractions", "Approximation"]
+          difficulty: "beginner"
+          formulas: ["BODMAS order"]
+          duration_target_minutes: 12
+        - part: 95
+          title: "Square Root, Cube Root & Squares Tricks"
+          subtopics: ["Finding square roots", "Cube roots", "Squaring shortcuts"]
+          difficulty: "beginner"
+          formulas: ["(a+b)^2 = a^2 + 2ab + b^2"]
+          duration_target_minutes: 12
+
+    - name: "Quant - Percentage, Ratio & Average"
+      category: "quant"
+      slot: "morning"
+      topics:
+        - part: 96
+          title: "Percentage - Concepts & Applications"
+          subtopics: ["Percentage to fraction", "Increase/decrease", "Successive percentage"]
+          difficulty: "beginner"
+          formulas: ["x% of y = (x/100)*y", "Successive: a+b+(ab/100)"]
+          duration_target_minutes: 12
+        - part: 97
+          title: "Ratio & Proportion"
+          subtopics: ["Simple/compound ratio", "Direct/inverse proportion", "Partnership"]
+          difficulty: "beginner"
+          formulas: ["a:b = c:d -> ad = bc", "Mean proportional = sqrt(ab)"]
+          duration_target_minutes: 12
+        - part: 98
+          title: "Average"
+          subtopics: ["Average of numbers", "Weighted average", "Average speed"]
+          difficulty: "beginner"
+          formulas: ["Average = Sum / Count", "Average speed = 2xy/(x+y)"]
+          duration_target_minutes: 12
+        - part: 99
+          title: "Mixture & Alligation"
+          subtopics: ["Alligation rule", "Mean price", "Replacement"]
+          difficulty: "intermediate"
+          formulas: ["Alligation: (Dearer-Mean)/(Mean-Cheaper)"]
+          duration_target_minutes: 12
+
+    - name: "Quant - Commercial Math"
+      category: "quant"
+      slot: "morning"
+      topics:
+        - part: 100
+          title: "Profit, Loss & Discount"
+          subtopics: ["Profit/loss %", "Marked price", "Successive discount"]
+          difficulty: "beginner"
+          formulas: ["Profit% = (Profit/CP)*100", "SP = MP(1 - d/100)"]
+          duration_target_minutes: 12
+        - part: 101
+          title: "Simple Interest"
+          subtopics: ["SI formula", "Rate/time/principal", "Installments"]
+          difficulty: "beginner"
+          formulas: ["SI = PRT/100"]
+          duration_target_minutes: 12
+        - part: 102
+          title: "Compound Interest"
+          subtopics: ["CI formula", "Half-yearly/quarterly", "CI-SI difference"]
+          difficulty: "intermediate"
+          formulas: ["A = P(1 + R/100)^n", "CI-SI (2yr) = P(R/100)^2"]
+          duration_target_minutes: 12
+
+    - name: "Quant - Time Based"
+      category: "quant"
+      slot: "morning"
+      topics:
+        - part: 103
+          title: "Time & Work"
+          subtopics: ["Work rate", "Combined work", "Efficiency", "Pipes & cisterns"]
+          difficulty: "intermediate"
+          formulas: ["Work = Rate * Time", "1/A + 1/B = 1/Combined"]
+          duration_target_minutes: 12
+        - part: 104
+          title: "Time, Speed & Distance"
+          subtopics: ["Basic relationship", "Average speed", "Relative speed"]
+          difficulty: "intermediate"
+          formulas: ["Speed = Distance/Time"]
+          duration_target_minutes: 12
+        - part: 105
+          title: "Trains, Boats & Streams"
+          subtopics: ["Train crossing", "Upstream/downstream", "Relative motion"]
+          difficulty: "intermediate"
+          formulas: ["Downstream = (b+s)", "Upstream = (b-s)"]
+          duration_target_minutes: 12
+
+    - name: "Quant - Algebra"
+      category: "quant"
+      slot: "morning"
+      topics:
+        - part: 106
+          title: "Algebra - Basic Identities"
+          subtopics: ["Important identities", "Factorization", "Componendo-dividendo"]
+          difficulty: "intermediate"
+          formulas: ["a^3+b^3 = (a+b)(a^2-ab+b^2)", "a^3+b^3+c^3-3abc"]
+          duration_target_minutes: 12
+        - part: 107
+          title: "Algebra - Linear & Quadratic Equations"
+          subtopics: ["Solving linear equations", "Quadratic roots", "Nature of roots"]
+          difficulty: "intermediate"
+          formulas: ["x = (-b +/- sqrt(b^2-4ac))/2a", "Sum of roots = -b/a"]
+          duration_target_minutes: 12
+        - part: 108
+          title: "Algebra - Advanced Problems & Polynomials"
+          subtopics: ["If x+1/x given", "Maximum/minimum values", "Polynomial division"]
+          difficulty: "advanced"
+          formulas: ["x^2 + 1/x^2 = (x + 1/x)^2 - 2"]
+          duration_target_minutes: 12
+
+    - name: "Quant - Geometry"
+      category: "quant"
+      slot: "morning"
+      topics:
+        - part: 109
+          title: "Geometry - Lines, Angles & Triangles"
+          subtopics: ["Angle properties", "Triangle types", "Congruence & similarity"]
+          difficulty: "intermediate"
+          formulas: ["Sum of angles = 180", "Pythagoras theorem"]
+          duration_target_minutes: 12
+        - part: 110
+          title: "Geometry - Centres of Triangle"
+          subtopics: ["Centroid", "Incentre", "Circumcentre", "Orthocentre"]
+          difficulty: "advanced"
+          formulas: ["Centroid divides median 2:1"]
+          duration_target_minutes: 12
+        - part: 111
+          title: "Geometry - Circles"
+          subtopics: ["Chords & tangents", "Cyclic quadrilateral", "Angle in semicircle"]
+          difficulty: "intermediate"
+          formulas: ["Angle at centre = 2 * angle at circumference"]
+          duration_target_minutes: 12
+        - part: 112
+          title: "Geometry - Quadrilaterals & Polygons"
+          subtopics: ["Properties of quadrilaterals", "Interior/exterior angles", "Regular polygons"]
+          difficulty: "intermediate"
+          formulas: ["Sum interior angles = (n-2)*180", "Each exterior = 360/n"]
+          duration_target_minutes: 12
+
+    - name: "Quant - Mensuration"
+      category: "quant"
+      slot: "morning"
+      topics:
+        - part: 113
+          title: "Mensuration 2D - Areas & Perimeters"
+          subtopics: ["Triangle, rectangle, square", "Circle, sector", "Trapezium, rhombus"]
+          difficulty: "intermediate"
+          formulas: ["Area circle = pi*r^2", "Triangle = (1/2)base*height", "Heron's formula"]
+          duration_target_minutes: 12
+        - part: 114
+          title: "Mensuration 3D - Volumes & Surface Areas"
+          subtopics: ["Cube, cuboid", "Cylinder, cone", "Sphere, hemisphere"]
+          difficulty: "intermediate"
+          formulas: ["Sphere V = (4/3)pi*r^3", "Cone V = (1/3)pi*r^2*h"]
+          duration_target_minutes: 12
+
+    - name: "Quant - Trigonometry"
+      category: "quant"
+      slot: "morning"
+      topics:
+        - part: 115
+          title: "Trigonometry - Ratios & Identities"
+          subtopics: ["Six ratios", "Standard angles", "Trigonometric identities"]
+          difficulty: "intermediate"
+          formulas: ["sin^2 + cos^2 = 1", "sec^2 - tan^2 = 1"]
+          duration_target_minutes: 12
+        - part: 116
+          title: "Trigonometry - Heights & Distances"
+          subtopics: ["Angle of elevation", "Angle of depression", "Application problems"]
+          difficulty: "intermediate"
+          formulas: ["tan(theta) = height/distance"]
+          duration_target_minutes: 12
+        - part: 117
+          title: "Trigonometry - Complementary Angles & Advanced"
+          subtopics: ["Complementary identities", "Maximum/minimum values", "Mixed problems"]
+          difficulty: "advanced"
+          formulas: ["sin(90-x) = cos(x)"]
+          duration_target_minutes: 12
+
+    - name: "Quant - Data Interpretation"
+      category: "quant"
+      slot: "morning"
+      topics:
+        - part: 118
+          title: "Data Interpretation - Tables & Bar Graphs"
+          subtopics: ["Reading tables", "Bar graph analysis", "Calculation shortcuts"]
+          difficulty: "intermediate"
+          formulas: ["Percentage change formula"]
+          duration_target_minutes: 12
+        - part: 119
+          title: "Data Interpretation - Pie Chart & Line Graph"
+          subtopics: ["Pie chart degrees", "Line graph trends", "Combined DI"]
+          difficulty: "intermediate"
+          formulas: ["Degree = (value/total)*360"]
+          duration_target_minutes: 12
+
+    - name: "Quant - Practice & Revision"
+      category: "quant"
+      slot: "morning"
+      topics:
+        - part: 120
+          title: "Quant Practice Set 1 - Arithmetic"
+          subtopics: ["Percentage, profit-loss, interest", "Time-based problems", "Speed techniques"]
+          difficulty: "intermediate"
+          formulas: ["Arithmetic shortcuts"]
+          duration_target_minutes: 12
+        - part: 121
+          title: "Quant Practice Set 2 - Algebra, Geometry & Trigonometry"
+          subtopics: ["Mixed advanced problems", "Identity applications", "Geometry tricks"]
+          difficulty: "advanced"
+          formulas: ["Advanced formula application"]
+          duration_target_minutes: 12
+        - part: 122
+          title: "Quant - SSC CGL Previous Year Questions"
+          subtopics: ["CGL Tier-1 & Tier-2 patterns", "High-frequency topics", "Trap questions"]
+          difficulty: "intermediate"
+          formulas: ["SSC CGL quant strategy"]
+          duration_target_minutes: 12
+        - part: 123
+          title: "Quant - Speed Calculation & Vedic Math Tricks"
+          subtopics: ["Multiplication shortcuts", "Approximation", "Square/cube tricks"]
+          difficulty: "intermediate"
+          formulas: ["Vedic math sutras"]
+          duration_target_minutes: 12
+        - part: 124
+          title: "Quant - Complete Revision & Formula Sheet"
+          subtopics: ["All formulas compiled", "Topic-wise quick reference", "Last-minute revision"]
+          difficulty: "intermediate"
+          formulas: ["MASTER QUANT FORMULA SHEET"]
+          duration_target_minutes: 12
+
+    # ============================================================
+    # SUBJECT 3: ENGLISH COMPREHENSION  (Parts 181-250, EVENING)
+    # ============================================================
+    - name: "English - Grammar Foundations"
+      category: "english"
+      slot: "evening"
+      topics:
+        - part: 181
+          title: "Parts of Speech - Complete Overview"
+          subtopics: ["Noun, Pronoun, Verb", "Adjective, Adverb", "Preposition, Conjunction"]
+          difficulty: "beginner"
+          formulas: ["8 parts of speech"]
+          duration_target_minutes: 12
+        - part: 182
+          title: "Tenses - Rules & Usage"
+          subtopics: ["Present/Past/Future", "Perfect & continuous", "Sequence of tenses"]
+          difficulty: "beginner"
+          formulas: ["12 tense forms"]
+          duration_target_minutes: 12
+        - part: 183
+          title: "Subject-Verb Agreement"
+          subtopics: ["Singular/plural rules", "Collective nouns", "Special cases"]
+          difficulty: "intermediate"
+          formulas: ["Concord rules"]
+          duration_target_minutes: 12
+        - part: 184
+          title: "Articles (a, an, the)"
+          subtopics: ["Indefinite articles", "Definite article", "Omission of articles"]
+          difficulty: "beginner"
+          formulas: ["Article usage rules"]
+          duration_target_minutes: 12
+        - part: 185
+          title: "Prepositions - Usage & Rules"
+          subtopics: ["Prepositions of time/place", "Preposition with verbs", "Common errors"]
+          difficulty: "intermediate"
+          formulas: ["Preposition collocations"]
+          duration_target_minutes: 12
+        - part: 186
+          title: "Conjunctions & Connectors"
+          subtopics: ["Coordinating", "Subordinating", "Correlative conjunctions"]
+          difficulty: "intermediate"
+          formulas: ["Connector rules"]
+          duration_target_minutes: 12
+        - part: 187
+          title: "Voice - Active & Passive"
+          subtopics: ["Voice change rules", "Tense-wise conversion", "Special cases"]
+          difficulty: "intermediate"
+          formulas: ["Passive = object + be + V3 + by + subject"]
+          duration_target_minutes: 12
+        - part: 188
+          title: "Narration - Direct & Indirect Speech"
+          subtopics: ["Reporting rules", "Tense backshift", "Question/command conversion"]
+          difficulty: "intermediate"
+          formulas: ["Narration change rules"]
+          duration_target_minutes: 12
+        - part: 189
+          title: "Modals & Auxiliary Verbs"
+          subtopics: ["Can/could/may/might", "Shall/should/will/would", "Must/ought to"]
+          difficulty: "intermediate"
+          formulas: ["Modal usage rules"]
+          duration_target_minutes: 12
+        - part: 190
+          title: "Degrees of Comparison"
+          subtopics: ["Positive/comparative/superlative", "Conversion rules", "Common errors"]
+          difficulty: "intermediate"
+          formulas: ["Comparison conversion"]
+          duration_target_minutes: 12
+
+    - name: "English - Error Detection & Sentence Improvement"
+      category: "english"
+      slot: "evening"
+      topics:
+        - part: 191
+          title: "Spotting Errors - Noun, Pronoun & Article Errors"
+          subtopics: ["Number/case errors", "Pronoun agreement", "Article misuse"]
+          difficulty: "intermediate"
+          formulas: ["Error spotting technique"]
+          duration_target_minutes: 12
+        - part: 192
+          title: "Spotting Errors - Verb, Tense & Preposition Errors"
+          subtopics: ["Verb form errors", "Tense consistency", "Wrong prepositions"]
+          difficulty: "intermediate"
+          formulas: ["Common error patterns"]
+          duration_target_minutes: 12
+        - part: 193
+          title: "Sentence Improvement"
+          subtopics: ["Identifying weak parts", "Best replacement", "Idiomatic usage"]
+          difficulty: "intermediate"
+          formulas: ["Improvement strategy"]
+          duration_target_minutes: 12
+        - part: 194
+          title: "Sentence Rearrangement (Para Jumbles)"
+          subtopics: ["Opening sentence", "Linking ideas", "Logical flow"]
+          difficulty: "intermediate"
+          formulas: ["Jumble solving technique"]
+          duration_target_minutes: 12
+        - part: 195
+          title: "Fill in the Blanks (Single & Double)"
+          subtopics: ["Grammar-based blanks", "Vocabulary blanks", "Context clues"]
+          difficulty: "intermediate"
+          formulas: ["Context analysis method"]
+          duration_target_minutes: 12
+
+    - name: "English - Vocabulary"
+      category: "english"
+      slot: "evening"
+      topics:
+        - part: 196
+          title: "Synonyms - High Frequency SSC Words"
+          subtopics: ["Common synonyms", "Context-based meaning", "PYQ words"]
+          difficulty: "intermediate"
+          formulas: ["Root word analysis"]
+          duration_target_minutes: 12
+        - part: 197
+          title: "Antonyms - High Frequency SSC Words"
+          subtopics: ["Common antonyms", "Prefix-based opposites", "PYQ words"]
+          difficulty: "intermediate"
+          formulas: ["Prefix meaning analysis"]
+          duration_target_minutes: 12
+        - part: 198
+          title: "One Word Substitution"
+          subtopics: ["Person-related", "Place-related", "Common SSC substitutions"]
+          difficulty: "intermediate"
+          formulas: ["Category-wise grouping"]
+          duration_target_minutes: 12
+        - part: 199
+          title: "Idioms & Phrases"
+          subtopics: ["Common idioms", "Meaning identification", "PYQ idioms"]
+          difficulty: "intermediate"
+          formulas: ["Idiom memory technique"]
+          duration_target_minutes: 12
+        - part: 200
+          title: "Spelling Correction & Confusing Words"
+          subtopics: ["Commonly misspelled words", "Homophones", "Confusing word pairs"]
+          difficulty: "beginner"
+          formulas: ["Spelling rules"]
+          duration_target_minutes: 12
+        - part: 201
+          title: "Phrasal Verbs"
+          subtopics: ["Common phrasal verbs", "Multiple meanings", "Usage in sentences"]
+          difficulty: "intermediate"
+          formulas: ["Verb + particle meanings"]
+          duration_target_minutes: 12
+
+    - name: "English - Comprehension & Cloze"
+      category: "english"
+      slot: "evening"
+      topics:
+        - part: 202
+          title: "Reading Comprehension - Strategy & Practice"
+          subtopics: ["Skimming & scanning", "Main idea", "Inference questions"]
+          difficulty: "intermediate"
+          formulas: ["RC solving framework"]
+          duration_target_minutes: 12
+        - part: 203
+          title: "Cloze Test"
+          subtopics: ["Passage-based blanks", "Grammar + vocabulary", "Coherence"]
+          difficulty: "intermediate"
+          formulas: ["Cloze test approach"]
+          duration_target_minutes: 12
+
+    - name: "English - Practice & Revision"
+      category: "english"
+      slot: "evening"
+      topics:
+        - part: 204
+          title: "English Practice Set 1 - Grammar"
+          subtopics: ["Mixed grammar questions", "Error detection", "Voice & narration"]
+          difficulty: "intermediate"
+          formulas: ["Grammar quick rules"]
+          duration_target_minutes: 12
+        - part: 205
+          title: "English Practice Set 2 - Vocabulary & Comprehension"
+          subtopics: ["Synonym/antonym mix", "Idioms", "RC passages"]
+          difficulty: "intermediate"
+          formulas: ["Vocabulary strategy"]
+          duration_target_minutes: 12
+        - part: 206
+          title: "English - SSC CGL Previous Year Questions"
+          subtopics: ["CGL Tier-1 & Tier-2 patterns", "High-frequency topics", "Common traps"]
+          difficulty: "intermediate"
+          formulas: ["SSC CGL English strategy"]
+          duration_target_minutes: 12
+        - part: 207
+          title: "English - Complete Revision & Word List"
+          subtopics: ["All grammar rules recap", "Important word list", "Last-minute tips"]
+          difficulty: "intermediate"
+          formulas: ["English revision sheet"]
+          duration_target_minutes: 12
+
+    # ============================================================
+    # SUBJECT 4: GENERAL AWARENESS (GK/GS)  (Parts 251-320, EVENING)
+    # ============================================================
+    - name: "GA - History"
+      category: "general_awareness"
+      slot: "evening"
+      topics:
+        - part: 251
+          title: "Ancient History - Indus Valley to Mauryas"
+          subtopics: ["Indus Valley Civilization", "Vedic period", "Mauryan empire"]
+          difficulty: "intermediate"
+          formulas: ["Chronology timeline"]
+          duration_target_minutes: 12
+        - part: 252
+          title: "Medieval History - Sultanate to Mughals"
+          subtopics: ["Delhi Sultanate", "Mughal empire", "Bhakti & Sufi movements"]
+          difficulty: "intermediate"
+          formulas: ["Dynasty timeline"]
+          duration_target_minutes: 12
+        - part: 253
+          title: "Modern History - British Rule & Reforms"
+          subtopics: ["East India Company", "British policies", "Socio-religious reforms"]
+          difficulty: "intermediate"
+          formulas: ["Event chronology"]
+          duration_target_minutes: 12
+        - part: 254
+          title: "Indian Freedom Struggle"
+          subtopics: ["1857 revolt", "Congress & movements", "Gandhi era to Independence"]
+          difficulty: "intermediate"
+          formulas: ["Freedom movement timeline"]
+          duration_target_minutes: 12
+
+    - name: "GA - Geography"
+      category: "general_awareness"
+      slot: "evening"
+      topics:
+        - part: 255
+          title: "Physical Geography of India"
+          subtopics: ["Mountains & rivers", "Climate", "Soils & vegetation"]
+          difficulty: "intermediate"
+          formulas: ["Map-based learning"]
+          duration_target_minutes: 12
+        - part: 256
+          title: "Indian Geography - States, Resources & Agriculture"
+          subtopics: ["States & capitals", "Minerals", "Crops & cropping seasons"]
+          difficulty: "intermediate"
+          formulas: ["Resource distribution"]
+          duration_target_minutes: 12
+        - part: 257
+          title: "World Geography - Continents, Oceans & Phenomena"
+          subtopics: ["Continents & countries", "Latitude/longitude", "Natural phenomena"]
+          difficulty: "intermediate"
+          formulas: ["Geographic coordinates"]
+          duration_target_minutes: 12
+
+    - name: "GA - Polity"
+      category: "general_awareness"
+      slot: "evening"
+      topics:
+        - part: 258
+          title: "Indian Constitution - Features & Sources"
+          subtopics: ["Making of constitution", "Salient features", "Borrowed features"]
+          difficulty: "intermediate"
+          formulas: ["Constitutional framework"]
+          duration_target_minutes: 12
+        - part: 259
+          title: "Fundamental Rights, Duties & DPSP"
+          subtopics: ["6 Fundamental Rights", "Fundamental Duties", "Directive Principles"]
+          difficulty: "intermediate"
+          formulas: ["Articles 12-51"]
+          duration_target_minutes: 12
+        - part: 260
+          title: "Union & State Government"
+          subtopics: ["President & PM", "Parliament", "Governor & CM", "State legislature"]
+          difficulty: "intermediate"
+          formulas: ["Government structure"]
+          duration_target_minutes: 12
+        - part: 261
+          title: "Judiciary & Constitutional Bodies"
+          subtopics: ["Supreme Court & High Courts", "Election Commission", "CAG, UPSC"]
+          difficulty: "intermediate"
+          formulas: ["Constitutional bodies list"]
+          duration_target_minutes: 12
+        - part: 262
+          title: "Amendments, Schedules & Important Articles"
+          subtopics: ["Key amendments", "12 Schedules", "Important articles"]
+          difficulty: "advanced"
+          formulas: ["Schedule-article mapping"]
+          duration_target_minutes: 12
+
+    - name: "GA - Economics"
+      category: "general_awareness"
+      slot: "evening"
+      topics:
+        - part: 263
+          title: "Basics of Economics & National Income"
+          subtopics: ["Micro vs macro", "GDP, GNP, NNP", "Sectors of economy"]
+          difficulty: "intermediate"
+          formulas: ["GDP = C + I + G + (X-M)"]
+          duration_target_minutes: 12
+        - part: 264
+          title: "Banking, Money & RBI"
+          subtopics: ["Functions of RBI", "Monetary policy", "Types of banks", "Repo/Reverse repo"]
+          difficulty: "intermediate"
+          formulas: ["Monetary policy tools"]
+          duration_target_minutes: 12
+        - part: 265
+          title: "Budget, Taxation & Economic Schemes"
+          subtopics: ["Union budget terms", "Direct/indirect tax, GST", "Government schemes"]
+          difficulty: "intermediate"
+          formulas: ["Budget terminology"]
+          duration_target_minutes: 12
+
+    - name: "GA - General Science"
+      category: "general_awareness"
+      slot: "evening"
+      topics:
+        - part: 266
+          title: "Physics - Important Concepts for SSC"
+          subtopics: ["Motion & force", "Light & sound", "Electricity & magnetism"]
+          difficulty: "intermediate"
+          formulas: ["F = ma", "V = IR"]
+          duration_target_minutes: 12
+        - part: 267
+          title: "Chemistry - Important Concepts for SSC"
+          subtopics: ["Atomic structure", "Acids/bases/salts", "Metals & non-metals"]
+          difficulty: "intermediate"
+          formulas: ["pH scale", "Periodic table basics"]
+          duration_target_minutes: 12
+        - part: 268
+          title: "Biology - Human Body & Life Processes"
+          subtopics: ["Human systems", "Nutrition & diseases", "Cell & genetics"]
+          difficulty: "intermediate"
+          formulas: ["Body systems overview"]
+          duration_target_minutes: 12
+        - part: 269
+          title: "Biology - Plants, Environment & Ecology"
+          subtopics: ["Photosynthesis", "Ecosystem", "Environmental issues"]
+          difficulty: "intermediate"
+          formulas: ["Food chain & web"]
+          duration_target_minutes: 12
+
+    - name: "GA - Static GK"
+      category: "general_awareness"
+      slot: "evening"
+      topics:
+        - part: 270
+          title: "Static GK - Awards, Honours & Sports"
+          subtopics: ["National awards", "Sports cups & terms", "Important trophies"]
+          difficulty: "intermediate"
+          formulas: ["Awards categorization"]
+          duration_target_minutes: 12
+        - part: 271
+          title: "Static GK - Books, Authors & Important Days"
+          subtopics: ["Famous books & authors", "National/international days", "Themes"]
+          difficulty: "intermediate"
+          formulas: ["Days & themes list"]
+          duration_target_minutes: 12
+        - part: 272
+          title: "Static GK - Art, Culture, Dance & Festivals"
+          subtopics: ["Classical dances", "Folk dances", "Festivals by state"]
+          difficulty: "intermediate"
+          formulas: ["State-culture mapping"]
+          duration_target_minutes: 12
+        - part: 273
+          title: "Static GK - Organisations, Headquarters & Capitals"
+          subtopics: ["International organisations", "HQ & heads", "Countries-capitals-currencies"]
+          difficulty: "intermediate"
+          formulas: ["Organisation list"]
+          duration_target_minutes: 12
+
+    - name: "GA - Current Affairs & Practice"
+      category: "general_awareness"
+      slot: "evening"
+      topics:
+        - part: 274
+          title: "Current Affairs - How to Prepare for SSC CGL"
+          subtopics: ["Sources & strategy", "Last 6 months focus", "Note-making"]
+          difficulty: "beginner"
+          formulas: ["Current affairs strategy"]
+          duration_target_minutes: 12
+        - part: 275
+          title: "GA Practice Set 1 - History & Polity"
+          subtopics: ["Mixed PYQ", "High-frequency facts", "Memory techniques"]
+          difficulty: "intermediate"
+          formulas: ["GK memory tricks"]
+          duration_target_minutes: 12
+        - part: 276
+          title: "GA Practice Set 2 - Geography, Economy & Science"
+          subtopics: ["Mixed PYQ", "Fact recall", "Elimination technique"]
+          difficulty: "intermediate"
+          formulas: ["GK quick recall"]
+          duration_target_minutes: 12
+        - part: 277
+          title: "GA - SSC CGL Previous Year Questions"
+          subtopics: ["CGL Tier-1 patterns", "Repeated questions", "High-yield areas"]
+          difficulty: "intermediate"
+          formulas: ["SSC CGL GA strategy"]
+          duration_target_minutes: 12
+        - part: 278
+          title: "GA - Complete Revision & One-Liner Notes"
+          subtopics: ["All subjects quick recap", "One-liner facts", "Last-minute revision"]
+          difficulty: "intermediate"
+          formulas: ["GA revision sheet"]
+          duration_target_minutes: 12

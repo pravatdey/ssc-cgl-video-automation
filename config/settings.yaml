@@ -1,0 +1,84 @@
+app:
+  name: SSC CGL Complete Preparation
+  version: 1.0.0
+  description: Complete SSC CGL preparation — Reasoning, Quant, English & GA. Two
+    daily lessons in Hindi.
+video:
+  duration_min: 15
+  duration_max: 20
+  resolution:
+    width: 854
+    height: 480
+  fps: 30
+  codec: libx264
+  bitrate: 1500k
+  preset: ultrafast
+llm:
+  provider: groq
+  groq:
+    model: llama-3.3-70b-versatile
+    temperature: 0.7
+    max_tokens: 8000
+tts:
+  provider: gemini
+  gemini:
+    default_language: hi
+    voice_name: Charon
+    timeout: 120
+  edge:
+    voice: hi-IN-MadhurNeural
+    rate: -5%
+    pitch: -2Hz
+    volume: +0%
+composition:
+  intro_video: assets/intro.mp4
+  background:
+    color: '#0A0E1A'
+  fonts:
+    title_size: 42
+    section_label_size: 24
+    body_size: 28
+    formula_size: 34
+    small_size: 18
+  progress_bar:
+    enabled: true
+    height: 6
+    color_complete: '#00D4FF'
+    color_remaining: '#1A1E2E'
+  music:
+    enabled: false
+    file: assets/music/study_ambient.mp3
+    volume: 0.06
+  intro:
+    duration: 4
+    animation: fade
+  outro:
+    duration: 5
+    text: Subscribe for daily SSC CGL lessons — morning & evening!
+syllabus:
+  file: config/syllabus.yaml
+  total_parts: 320
+schedule:
+  enabled: true
+  timezone: Asia/Kolkata
+  slots:
+    morning: 05:00
+    evening: '17:00'
+youtube:
+  category_id: '27'
+  privacy_status: public
+  playlist_id: ''
+  playlist_title: SSC CGL Complete Preparation | Reasoning, Maths, English & GK |
+    Daily Free Classes
+  playlist_description: Complete SSC CGL preparation in Hindi. All 4 subjects —
+    General Intelligence & Reasoning, Quantitative Aptitude, English Comprehension,
+    and General Awareness — covered topic-wise with concepts, formulas, tricks,
+    solved examples and practice questions. Two new free classes every day (morning
+    & evening). Watch the full series and never lose a single question in your exam!
+database:
+  path: data/cgl_tracker.db
+output:
+  audio_dir: output/audio
+  video_dir: output/videos
+  thumbnail_dir: output/thumbnails
+  script_dir: output/scripts

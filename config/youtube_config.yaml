@@ -1,0 +1,80 @@
+metadata:
+  title_template: "{category} | {topic} | SSC CGL Complete Preparation in Hindi (Part {part})"
+
+  description_template: |
+    📘 SSC CGL Complete Preparation — {category}
+    Topic: {topic}  (Part {part})
+
+    इस video में हम cover करेंगे:
+    {topic_summary}
+
+    ✅ इस class में आपको मिलेगा:
+    - हर concept की detail explanation (Hindi में)
+    - Important formulas / rules / facts
+    - Step-by-step solved examples
+    - Exam tricks & shortcuts (time बचाने के लिए)
+    - Practice questions — answers पिन किए गए comment में!
+
+    🎯 यह series पूरे SSC CGL syllabus को cover करती है — Reasoning, Quantitative Aptitude (Maths), English और General Awareness। रोज़ 2 नई classes — सुबह और शाम। पूरी series complete करने पर exam में एक भी question नहीं छूटेगा।
+
+    🔔 Channel subscribe करें और bell icon दबाएँ ताकि हर नई class की notification मिले।
+    💬 Practice questions ज़रूर solve करें और answer comment में लिखें — मैं reply करूँगा सही है या गलत।
+
+    👇 पिन किए गए comment में study notes + practice questions + answer key देखें!
+
+    #SSCCGL #SSCCGLPreparation #SSC #CGL #{category_tag} #SSCCGLinHindi #SSCExam #GovtJobs #SSCCGL2025 #FreeSSCClasses
+
+  tags:
+    - "ssc cgl"
+    - "ssc cgl preparation"
+    - "ssc cgl in hindi"
+    - "ssc cgl 2025"
+    - "ssc cgl reasoning"
+    - "ssc cgl maths"
+    - "ssc cgl english"
+    - "ssc cgl gk"
+    - "ssc cgl general awareness"
+    - "ssc exam preparation"
+    - "ssc cgl free classes"
+    - "ssc cgl tricks"
+    - "ssc cgl syllabus"
+    - "quantitative aptitude"
+    - "reasoning tricks"
+    - "english grammar ssc"
+    - "general knowledge ssc"
+    - "ssc cgl complete course"
+    - "govt job preparation"
+    - "ssc cgl daily class"
+
+  category_id: "27"
+  default_language: "hi"
+  made_for_kids: false
+
+comment:
+  study_notes_template: |
+    📚 STUDY NOTES — {topic} (Part {part})
+
+    🔑 KEY CONCEPTS:
+    {key_concepts}
+
+    📐 IMPORTANT FORMULAS / RULES / FACTS:
+    {formulas}
+
+    💡 TIPS & TRICKS:
+    {tips}
+
+    ✅ PRACTICE QUESTIONS (पहले खुद solve करें, फिर answer reply में देखें!):
+    {practice_questions}
+
+    👉 अपना answer comment में लिखें — मैं बताऊँगा सही है या गलत!
+    🔔 रोज़ की SSC CGL classes के लिए subscribe करें — सुबह और शाम।
+
+  answer_key_template: |
+    🔓 ANSWER KEY — Part {part}:
+    {answers}
+
+    कितने सही हुए? नीचे comment करें! 👇
+
+playlist:
+  title: "SSC CGL Complete Preparation | Reasoning, Maths, English & GK | Daily Free Classes"
+  description: "Complete SSC CGL preparation in Hindi — all 4 subjects covered topic-wise with concepts, formulas, tricks, solved examples and practice questions. Two new free classes every day (morning & evening)."
