@@ -26,6 +26,22 @@ class MetadataGenerator:
             logger.warning(f"Failed to load YouTube config: {e}")
             return {}
 
+    @staticmethod
+    def _sanitize_tag(tag: str) -> str:
+        """Make a tag safe for YouTube (avoids the invalidTags 400 error).
+
+        YouTube rejects the whole upload if any tag contains a comma or
+        angle brackets, or if a single tag exceeds ~100 chars. Replace the
+        offending characters with spaces, collapse whitespace, and cap length.
+        """
+        if not tag:
+            return ""
+        for ch in (",", "<", ">"):
+            tag = tag.replace(ch, " ")
+        tag = tag.replace("/", " ").replace("\\", " ")
+        tag = " ".join(tag.split())  # collapse whitespace
+        return tag[:100].strip()
+
     def generate(self, topic: Topic, lesson: LessonPlan) -> Dict[str, Any]:
         """Generate complete metadata for a video."""
         meta_config = self.config.get("metadata", {})
@@ -69,7 +85,15 @@ class MetadataGenerator:
         for sub in topic.subtopics[:5]:
             topic_tags.append(sub.lower())
 
-        tags = list(dict.fromkeys(base_tags + topic_tags))  # dedupe, keep order
+        # YouTube rejects (invalidTags) tags containing commas/angle-brackets or
+        # tags longer than ~100 chars. Sanitize each tag, drop empties/oversize.
+        cleaned = []
+        for t in base_tags + topic_tags:
+            t = self._sanitize_tag(t)
+            if t:
+                cleaned.append(t)
+
+        tags = list(dict.fromkeys(cleaned))  # dedupe, keep order
         # YouTube total tag length cap ~500 chars
         trimmed, total = [], 0
         for t in tags:

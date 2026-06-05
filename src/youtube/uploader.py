@@ -102,7 +102,9 @@ class YouTubeUploader:
 
         except HttpError as e:
             error_msg = f"HTTP error {e.resp.status}: {e.content.decode()}"
-            logger.error(f"Upload failed: {error_msg}")
+            # Pass as positional arg: the error body contains literal "{" which
+            # loguru would otherwise parse as a format field and raise KeyError.
+            logger.error("Upload failed: {}", error_msg)
             return UploadResult(False, "", "", title, error=error_msg)
         except Exception as e:
             logger.error(f"Upload failed: {e}")

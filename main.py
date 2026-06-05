@@ -257,7 +257,9 @@ class CGLVideoPipeline:
             result["success"] = True
 
         except Exception as e:
-            self.logger.error(f"Pipeline failed: {e}", exc_info=True)
+            # Positional arg: exception text may contain literal "{" (e.g. JSON
+            # API error bodies) which loguru would parse as a format field.
+            self.logger.error("Pipeline failed: {}", e, exc_info=True)
             result["error"] = str(e)
             if result.get("part"):
                 self.db.update_lesson_status(result["part"], "failed", error=str(e))
